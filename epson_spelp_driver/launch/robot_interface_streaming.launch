@@ -1,0 +1,30 @@
+<!-- 
+  Wrapper launch file for the Epson specific full robot_interface_streaming support.
+-->
+<launch>
+  <!-- IP of robot (or PC running simulation) -->
+  <arg name="robot_ip" />
+
+  <!-- copy the specified parameters to the Parameter Server, for
+       use by nodes below -->
+  <param name="robot_ip_address" type="str" value="$(arg robot_ip)" />
+
+  <!-- robot_state: publishes joint positions and robot-state data
+       (from socket connection to robot)
+  -->
+  <include file="$(find epson_spelp_driver)/launch/robot_state.launch">
+    <arg name="robot_ip" value="$(arg robot_ip)" />
+  </include>
+
+  <!-- motion_streaming_interface: sends robot motion commands by
+       STREAMING path to robot (using socket connection to robot)
+  -->
+  <include file="$(find epson_spelp_driver)/launch/motion_streaming_interface.launch">
+    <arg name="robot_ip" value="$(arg robot_ip)" />
+  </include>
+
+  <!-- joint_trajectory_action: provides actionlib interface for
+       high-level robot control
+  -->
+  <node pkg="industrial_robot_client" type="joint_trajectory_action" name="joint_trajectory_action" />
+</launch>
