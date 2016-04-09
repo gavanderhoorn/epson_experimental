@@ -6,118 +6,118 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/base_link.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/base_link.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/base_link.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/base_link.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_1">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 -0.1965" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_1.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_1.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 -0.1965" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_1.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_1.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_2">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.1 -0.320" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_2.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_2.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.1 -0.320" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_2.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_2.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_3">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.1 -0.57" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_3.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_3.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.1 -0.57" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_3.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_3.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_4">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.1 -0.57" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_4.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_4.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.1 -0.57" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_4.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_4.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_5">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.35 -0.57" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_5.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_5.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 -0.35 -0.57" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_5.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_5.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_6">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="-0.57 0 -0.41" rpy="1.570796326 0 1.570796326"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_6.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/visual/link_6.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="-0.57 0 -0.41" rpy="1.570796326 0 1.570796326"/>
         <geometry>
-          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_6.stl"/>
+          <mesh filename="package://epson_c3_support/meshes/c3/collision/link_6.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
@@ -164,7 +164,7 @@
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 -1"/>
-      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="12,56"/>
+      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="12.56"/>
     </joint>
     <joint name="${prefix}joint_6-tool0" type="fixed">
       <origin xyz="0 0 0.005" rpy="0 0 0.785398163" />

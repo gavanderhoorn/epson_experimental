@@ -1,0 +1,24 @@
+<!--
+  Manipulator specific version of the state visualizer.
+
+  Defaults provided for C3:
+   - 6 joints
+
+  Usage:
+    robot_state_visualize_c3.launch robot_ip:=<value>
+-->
+<launch>
+  <arg name="robot_ip" />
+
+  <rosparam command="load" file="$(find epson_c3_support)/config/joint_names_c3.yaml" />
+
+  <include file="$(find epson_spelp_driver)/launch/robot_state.launch">
+    <arg name="robot_ip" value="$(arg robot_ip)" />
+  </include>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <include file="$(find epson_c3_support)/launch/load_c3.launch" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find industrial_robot_client)/config/robot_state_visualize.rviz" required="true" />
+</launch>
