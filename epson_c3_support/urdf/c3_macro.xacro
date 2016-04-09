@@ -9,8 +9,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/base_link.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -26,8 +26,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/link_1.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -43,8 +43,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/link_2.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -60,8 +60,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/link_3.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -77,8 +77,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/link_4.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -94,8 +94,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/link_5.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -111,8 +111,8 @@
           <mesh filename="package://epson_c3_support/meshes/c3/visual/link_6.stl"/>
         </geometry>
         <material name="">
-       	  <color rgba="1 1 1 1" />
-      	</material>
+          <color rgba="1 1 1 1" />
+        </material>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
