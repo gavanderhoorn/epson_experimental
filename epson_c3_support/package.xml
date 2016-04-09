@@ -36,6 +36,7 @@
 
   <test_depend version_gte="1.9.55">roslaunch</test_depend>
 
+  <exec_depend>epson_spelp_driver</exec_depend>
   <exec_depend>industrial_robot_client</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
