@@ -1,4 +1,10 @@
+
+
 Function main
-	'TODO: start state & trajectory relay tasks
+
+Xqt robot_state_mainv3
+Call robot_trajectory_main
+
 Fend
+
 
