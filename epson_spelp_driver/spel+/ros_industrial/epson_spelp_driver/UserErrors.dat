@@ -1,3 +1,8 @@
-ENVT0100,LM:2015/03/10 10:42:32:445,DS:0000000135,CS:00107,MA:00-50-56-37-DD-C3,EI:           
-sRCVersion="7.0.5"
-nNumberOfLabels=0
+ENVT0100,LM:2016/05/12 06:03:46:765,DS:0000000237,CS:02056,MA:00-80-4C-A4-83-B2,EI:           
+sRCVersion="6.2.3"
+nNumberOfLabels=1
+Label1 {
+	nError=8000
+	sLabel="CORRUPT_MSG"
+	sMessage="JOINT_TRAJECTORY_PT message is corrupt"
+}

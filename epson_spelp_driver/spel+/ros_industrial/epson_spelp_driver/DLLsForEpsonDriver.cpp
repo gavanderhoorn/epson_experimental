@@ -42,6 +42,22 @@ DLLSFOREPSONDRIVER_API short JointPositionSMtoInts(int sm_length,int sm_id ,int 
 
 	return 1;
 }
+DLLSFOREPSONDRIVER_API short RobotStatusSMtoInts(int sm_length,int sm_id ,int sm_comm_type,int sm_reply_type,int* robot_status_body, short* outputIntegers)
+{	
+	unsigned char buffer[44];
+	memcpy(buffer,&sm_length,sizeof(sm_length));
+	memcpy(buffer + 4,&sm_id,sizeof(sm_id));
+	memcpy(buffer + 8,&sm_comm_type,sizeof(sm_comm_type));
+	memcpy(buffer + 12,&sm_reply_type,sizeof(sm_reply_type));
+    memcpy(buffer + 16, robot_status_body,28);
+
+    for (int i=0;i<sizeof(buffer);i++)
+    {
+		outputIntegers[i]=buffer[i];
+    }
+
+	return 1;
+}
 DLLSFOREPSONDRIVER_API short convertToFloatingpoint(short* inputintegers,float* joint_data,float velocity,float duration)
 {
     unsigned char jointbuffer[40];
