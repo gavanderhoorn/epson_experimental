@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="epson_c3a601s" params="prefix">
+    <!-- links -->
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/base_link.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/base_link.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_1">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/link_1.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/link_1.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_2">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/link_2.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/link_2.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_3">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/link_3.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/link_3.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_4">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/link_4.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/link_4.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_5">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/link_5.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/link_5.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_6">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/visual/link_6.stl"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+        <geometry>
+          <mesh filename="package://epson_c3a601s_support/meshes/c3a601s/collision/link_6.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}tool0"/>
+
+    <!-- joints -->
+    <joint name="${prefix}joint_1" type="revolute">
+      <origin xyz="0 0 0.1965" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-2.9671" upper="2.9671" effort="0" velocity="7.85"/>
+    </joint>
+    <joint name="${prefix}joint_2" type="revolute">
+      <origin xyz="0.1 0 0.1235" rpy="0 0 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="-2.7925" upper="1.1345" effort="0" velocity="7.85"/>
+    </joint>
+    <joint name="${prefix}joint_3" type="revolute">
+      <origin xyz="0 0 0.25" rpy="0 0 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="-0.8901" upper="3.9270" effort="0" velocity="8.97"/>
+    </joint>
+    <joint name="${prefix}joint_4" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <axis xyz="-1 0 0"/>
+      <limit lower="-3.4907" upper="3.4907" effort="0" velocity="9.65"/>
+    </joint>
+    <joint name="${prefix}joint_5" type="revolute">
+      <origin xyz="0.25 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="-2.3562" upper="2.3562" effort="0" velocity="9.65"/>
+    </joint>
+    <joint name="${prefix}joint_6" type="revolute">
+      <origin xyz="0.06 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
+      <axis xyz="-1 0 0"/>
+      <limit lower="-6.2832" upper="6.2832" effort="0" velocity="12.56"/>
+    </joint>
+    <joint name="${prefix}joint_6-tool0" type="fixed">
+      <origin xyz="0.005 0 0" rpy="-1.570796326 0 -1.570796326" />
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}tool0"/>
+      <axis xyz="0 0 0" />
+    </joint>
+
+    <!-- ROS base_link to Epson World Coordinates transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 -1.570796326"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
+  </xacro:macro>
+</robot>

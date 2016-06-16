@@ -1,0 +1,18 @@
+<!--
+  Manipulator specific version of 'robot_interface_streaming.launch'.
+
+  Defaults provided for C3:
+   - 6 joints
+
+  Usage:
+    robot_interface_streaming_c3.launch robot_ip:=<value>
+-->
+<launch>
+  <arg name="robot_ip" />
+
+  <rosparam command="load" file="$(find epson_c3a601s_support)/config/joint_names_c3a601s.yaml" />
+
+  <include file="$(find epson_spelp_driver)/launch/robot_interface_streaming.launch">
+    <arg name="robot_ip" value="$(arg robot_ip)" />
+  </include>
+</launch>

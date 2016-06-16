@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>epson_c3a601s_support</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+      ROS-Industrial support for the Epson C3 (and variants).
+    </p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      for Epson C3 A601S manipulators. This currently includes the base model only.
+    </p>
+    <p><b>Specifications</b>:</p>
+    <ul>
+      <li>C3 A601S - Default</li>
+    </ul>
+    <p>
+      Joint limits and maximum joint velocities are based on the information in
+      the <em>EPSON ProSix - C3 series - MANIPULATOR MANUAL</em>,
+      <em>Rev.7 - EM134R2491F</em>. All urdfs are based on the default motion
+      and joint velocity limits, unless noted otherwise (ie: no support for
+      high speed joints, extended / limited motion ranges or other options).
+    </p>
+    <p>
+      Before using any of the configuration files and / or meshes included
+      in this package, be sure to check they are correct for the particular
+      robot model and configuration you intend to use them with.
+    </p>
+  </description>
+  <author>L. Castelli (U. Hasselt)</author>
+  <author>W. vd. Aelst (U. Hasselt)</author>
+  <maintainer email="lcastelli@todo.todo">L. Castelli (U. Hasselt)</maintainer>
+  <license>Apache2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <test_depend version_gte="1.9.55">roslaunch</test_depend>
+
+  <exec_depend>epson_spelp_driver</exec_depend>
+  <exec_depend>industrial_robot_client</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>
