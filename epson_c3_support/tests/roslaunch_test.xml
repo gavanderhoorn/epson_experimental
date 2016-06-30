@@ -2,22 +2,22 @@
 <launch>
   <arg name="ip_str" value="127.0.0.1" />
 
-  <group ns="load_c3__">
-    <include file="$(find epson_c3_support)/launch/load_c3.launch"/>
+  <group ns="load_c3a601s__">
+    <include file="$(find epson_c3_support)/launch/load_c3a601s.launch"/>
   </group>
 
-  <group ns="test_c3__">
-    <include file="$(find epson_c3_support)/launch/test_c3.launch"/>
+  <group ns="test_c3a601s__">
+    <include file="$(find epson_c3_support)/launch/test_c3a601s.launch"/>
   </group>
 
-  <group ns="robot_interface_streaming_c3__">
-    <include file="$(find epson_c3_support)/launch/robot_interface_streaming_c3.launch">
+  <group ns="robot_interface_streaming_c3a601s__">
+    <include file="$(find epson_c3_support)/launch/robot_interface_streaming_c3a601s.launch">
       <arg name="robot_ip" value="$(arg ip_str)" />
     </include>
   </group>
 
-  <group ns="robot_state_visualize_c3__">
-    <include file="$(find epson_c3_support)/launch/robot_state_visualize_c3.launch">
+  <group ns="robot_state_visualize_c3a601s__">
+    <include file="$(find epson_c3_support)/launch/robot_state_visualize_c3a601s.launch">
       <arg name="robot_ip" value="$(arg ip_str)" />
     </include>
   </group>

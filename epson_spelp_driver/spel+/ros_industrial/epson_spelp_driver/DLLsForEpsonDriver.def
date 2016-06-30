@@ -1,0 +1,5 @@
+LIBRARY	"DLLsForEpsonDriver"
+	EXPORTS 
+		JointPositionSMtoInts
+		convertToFloatingpoint
+		RobotStatusSMtoInts
