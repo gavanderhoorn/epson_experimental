@@ -10,7 +10,7 @@
 <launch>
   <arg name="robot_ip" />
 
-  <rosparam command="load" file="$(find epson_c3a601s_support)/config/joint_names_c3a601s.yaml" />
+  <rosparam command="load" file="$(find epson_c3_support)/config/joint_names_c3a601s.yaml" />
 
   <include file="$(find epson_spelp_driver)/launch/robot_interface_streaming.launch">
     <arg name="robot_ip" value="$(arg robot_ip)" />
