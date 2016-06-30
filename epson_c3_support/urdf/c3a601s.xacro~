@@ -1,5 +1,0 @@
-<?xml version="1.0" ?>
-<robot name="epson_c3a601s" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find epson_c3_support)/urdf/c3a601s_macro.xacro"/>
-  <xacro:epson_c3a601s prefix=""/>
-</robot>
