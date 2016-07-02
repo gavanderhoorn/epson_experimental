@@ -15,4 +15,4 @@ guaranteed to be complete and / or functional.
 
 [ROS-Industrial]: http://wiki.ros.org/Industrial
 [ROS wiki]: http://wiki.ros.org/epson_experimental
-[epson]: https://github.com/ros-industrial/epson
+[epson]: https://github.com/gavanderhoorn/epson_experimental

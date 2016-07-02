@@ -1,6 +1,7 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>epson_experimental</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>Experimental packages for Epson manipulators within ROS-Industrial.</description>
   <author>G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
@@ -12,9 +13,20 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>epson_spelp_driver</run_depend>
+  <exec_depend>epson_c3_support</exec_depend>
+  <exec_depend>epson_c3a601s_moveit_config</exec_depend>
+  <exec_depend>epson_spelp_driver</exec_depend>
 
   <export>
     <metapackage/>
+    <architecture_independent/>
+    <rosindex>
+      <tags>
+        <tag>epson</tag>
+        <tag>industrial</tag>
+        <tag>metapackage</tag>
+        <tag>ros-industrial</tag>
+      </tags>
+    </rosindex>
   </export>
 </package>

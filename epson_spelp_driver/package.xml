@@ -1,6 +1,7 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>epson_spelp_driver</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>
    <p>
      ROS-Industrial nodes for interfacing with Epson robot controllers.
@@ -21,7 +22,21 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend version_gte="1.9.55">roslaunch</build_depend>
+  <test_depend>roslaunch</test_depend>
 
-  <run_depend>industrial_robot_client</run_depend>
+  <exec_depend>industrial_robot_client</exec_depend>
+
+  <export>
+    <architecture_independent />
+    <rosindex>
+      <tags>
+        <tag>driver</tag>
+        <tag>simple_message</tag>
+        <tag>epson</tag>
+        <tag>industrial</tag>
+        <tag>ros-industrial</tag>
+        <tag>SPEL+</tag>
+      </tags>
+    </rosindex>
+  </export>
 </package>

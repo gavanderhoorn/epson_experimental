@@ -1,29 +1,55 @@
-<package>
-
+<?xml version="1.0"?>
+<package format="2">
   <name>epson_c3a601s_moveit_config</name>
-  <version>0.2.0</version>
+  <version>0.1.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the epson_c3a601s with the MoveIt Motion Planning Framework
+    <p>
+      MoveIt package for the Epson C3 A601S.
+    </p>
+    <p>
+      An automatically generated package with all the configuration and launch
+      files for using the Epson C3 A601S with the MoveIt Motion Planning
+      Framework.
+    </p>
   </description>
-  <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
-  <maintainer email="assistant@moveit.ros.org">MoveIt Setup Assistant</maintainer>
+  <author>MoveIt Setup Assistant</author>
+  <author>L. Castelli (U. Hasselt)</author>
+  <author>W. vd. Aelst (U. Hasselt)</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
 
   <license>BSD</license>
 
-  <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit_setup_assistant</url>
-
-  <run_depend>moveit_ros_move_group</run_depend>
-  <run_depend>moveit_planners_ompl</run_depend>
-  <run_depend>moveit_ros_visualization</run_depend>
-  <run_depend>joint_state_publisher</run_depend>
-  <run_depend>robot_state_publisher</run_depend>
-  <run_depend>xacro</run_depend>
-  <build_depend>epson_c3a601s_support</build_depend>
-  <run_depend>epson_c3a601s_support</run_depend>
-
+  <url type="website">http://wiki.ros.org/epson_c3a601s_moveit_config</url>
+  <url type="bugtracker">https://github.com/gavanderhoorn/epson_experimental/issues</url>
+  <url type="repository">https://github.com/gavanderhoorn/epson_experimental</url>
 
   <buildtool_depend>catkin</buildtool_depend>
-  
+
+  <exec_depend>epson_c3_support</exec_depend>
+  <exec_depend>industrial_robot_simulator</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_ros_warehouse</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>warehouse_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent />
+    <rosindex>
+      <tags>
+        <tag>c3</tag>
+        <tag>epson</tag>
+        <tag>experimental</tag>
+        <tag>industrial</tag>
+        <tag>moveit</tag>
+        <tag>ros-industrial</tag>
+      </tags>
+    </rosindex>
+  </export>
 </package>

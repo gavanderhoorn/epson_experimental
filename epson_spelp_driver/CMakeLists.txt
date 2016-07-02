@@ -8,17 +8,10 @@ catkin_package()
 
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
-  roslaunch_add_file_check(tests/roslaunch_test.xml
-    DEPENDENCIES
-      # not nice, but industrial_robot_client doesn't prefix its targets
-      joint_trajectory_action
-      motion_streaming_interface
-      robot_state
-  )
+  roslaunch_add_file_check(tests/roslaunch_test.xml)
 endif()
 
-foreach(dir spel+ launch)
-  install(
-    DIRECTORY ${dir}/
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach()
+install(DIRECTORY spel+ launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
+install(FILES readme.md DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
