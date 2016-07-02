@@ -1,0 +1,159 @@
+ENVT0100,LM:2015/03/10 11:53:39:846,DS:0000003091,CS:01094,MA:00-50-56-37-DD-C3,EI:           
+SystemProperties {
+	sRCVersion="7.0.5"
+	sRCRevision=""
+	sGUID="b08f9f39-b282-4848-a025-d56ddd617f54"
+	sPath="C:\\EpsonRC70\\Projects\\ros_industrial\\epson_spelp_driver\\"
+	sCreated="10-3-2015 11:42:32"
+	sLastModified="10-3-2015 12:53:32"
+	bBuildComplete=True
+	bFirstBuildComplete=True
+	bRebuildRequired=False
+	bClearControllerProject=False
+	bClearGlobalPreserves=False
+}
+UserProperties {
+	sVersion=""
+	sDescription=""
+	sNotes=""
+	sParserEmulationVersion=""
+	bStrictCompile=False
+	bGlobalsDeclaredEachFile=False
+}
+IOLabelFile {
+	sName="IOLabels.dat"
+	nChecksum=0
+}
+UserErrorsFile {
+	sName="UserErrors.dat"
+	nChecksum=0
+}
+nRobotCount=1
+nProgramFileCount=2
+ProgramFile1 {
+	sName="Main.prg"
+	bCompiled=True
+	bStoreInController=True
+	sTimeSavedInController="10-3-2015 11:47:59"
+}
+ProgramFile2 {
+	sName="ros_state.prg"
+	bCompiled=True
+	bStoreInController=True
+	sTimeSavedInController="10-3-2015 11:52:14"
+}
+nIncludeFileCount=1
+IncludeFile1 {
+	sName="simple_message.inc"
+	bStoreInController=True
+	sTimeSavedInController="10-3-2015 11:16:06"
+}
+nPointFileCount=1
+PointFile1 {
+	sName="robot1.pts"
+	nRobot=1
+	bDefault=True
+	sTimeSavedInController="10-3-2015 10:42:32"
+}
+OperatorSettings {
+	OperatorWindow {
+		sTitle="Operator Window"
+		nWinState=0
+		sFontName="Courier New"
+		rFontSize=10
+		bFontBold=False
+		bRobotMgrButton=True
+		bPauseContButtons=True
+		bIOMonitorButton=True
+		bSystemHistoryButton=True
+		bDisplayVision=False
+		bSimulatorButton=True
+		Program0 {
+			sName="Program"
+			bEnabled=True
+		}
+		Program1 {
+			sName="Program 1"
+			bEnabled=True
+		}
+		Program2 {
+			sName="Program 2"
+			bEnabled=True
+		}
+		Program3 {
+			sName="Program 3"
+			bEnabled=True
+		}
+		Program4 {
+			sName="Program 4"
+			bEnabled=True
+		}
+		Program5 {
+			sName="Program 5"
+			bEnabled=True
+		}
+		Program6 {
+			sName="Program 6"
+			bEnabled=True
+		}
+		Program7 {
+			sName="Program 7"
+			bEnabled=True
+		}
+	}
+	RobotManager {
+		bAllowReset=True
+		bAllowTeach=True
+		bAllowMotionCmds=True
+		bAllowDeletePoints=True
+		bAllowEditPoints=True
+		bAllowSFree=True
+		bAllowHome=True
+		bPromptNewPointInfo=True
+		bTeachDefinedOnly=True
+		bControlPanelTab=True
+		bJogTab=True
+		bPointsTab=True
+		bArchTab=False
+		bLocalsTab=False
+		bToolsTab=False
+		bArmsTab=False
+		bPalletsTab=False
+		bECPTab=False
+		bBoxesTab=False
+		bPlanesTab=False
+		bWeightTab=False
+		bInertiaTab=False
+		bXYZLimitsTab=False
+		bRangeTab=False
+		bHomeConfigTab=False
+		bMCalOrderTab=False
+	}
+	IOMonitor {
+		bStandardViewTab=True
+		bCustomView1Tab=True
+		bCustomView2Tab=False
+		bCustomView3Tab=False
+		bAllowChangeOutputs=False
+	}
+}
+IOCustomView1 {
+	sName=""
+	bVisible=True
+	nNumberOfRows=0
+}
+IOCustomView2 {
+	sName=""
+	bVisible=False
+	nNumberOfRows=0
+}
+IOCustomView3 {
+	sName=""
+	bVisible=False
+	nNumberOfRows=0
+}
+nVisFileCount=1
+VisFile1 {
+	sName="epson_spelp_driver.vis"
+}
+nGuiBuilderFileCount=0
